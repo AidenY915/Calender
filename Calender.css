@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+td {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+th:first-child {
+  color: red;
+}
+
+#content {
+  margin: auto;
+  width: 1200px;
+  text-align: center;
+}
+#content > #calenderAndButton > * {
+  float: left;
+}
+#calenderAndButton {
+  width: 100%;
+  overflow: visible;
+}
+
+caption {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 30px 0;
+  color: #555;
+}
+
+.monthChangeButton {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  background-color: #fff;
+  border: 0px;
+  box-shadow: 0px 0px 2px #aaa;
+  border-radius: 10px;
+  color: rgba(8, 119, 198, 0.5);
+  font-size: 2em;
+}
+.monthChangeButton:hover {
+  border: 1px solid rgb(8, 119, 198);
+}
+
+#content table {
+  width: 80%;
+  box-shadow: 5px 5px 5px 5px #aaa;
+  border-radius: 5px;
+}
+
+.dateCell {
+  height: 130px;
+  width: 135px;
+  position: relative;
+  overflow: hidden;
+}
+
+.dateCell > button > span {
+  text-align: left;
+  font-weight: 500;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.dateCell:first-child span {
+  color: red;
+}
+
+.scheduleSetButton {
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  border: 0;
+  text-align: left;
+}
+
+.dateCell:not([class="dateCell"]) span {
+  color: red;
+}
+.holidaySpan {
+  font-size: 12px;
+}
+
+.scheduleSetButton > div {
+  position: absolute;
+  top: 35px;
+  left: 10px;
+  font-size: 15px;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#today {
+  background-color: rgba(8, 119, 198, 0.5);
+  display: inline-block;
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+
+#fileDiv {
+  margin-top: 300px;
+  float: right;
+  width: 100px;
+}
+#fileDiv > button {
+  display: block;
+  width: 100%;
+  height: 150px;
+  background-color: #fff;
+  color: rgba(8, 119, 198, 0.5);
+  border: 1px solid rgba(8, 119, 198, 0.5);
+  border-radius: 5px 5px 0 0;
+}
+#fileDiv > button:hover {
+  color: #fff;
+  background-color: rgba(8, 119, 198, 0.5);
+}
+#fileDiv > label {
+  display: block;
+  height: 150px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid rgba(8, 119, 198, 0.5);
+  border-top: 0px;
+  color: rgba(8, 119, 198, 0.5);
+  border-radius: 0 0 5px 5px;
+  padding-top: 54px;
+}
+
+#fileDiv > label:hover {
+  color: #fff;
+  background-color: rgba(8, 119, 198, 0.5);
+}
+
+#loadedFile {
+  display: none;
+}
+
+#scheduleDetail {
+  display: none;
+  margin: 0 auto;
+  width: 80%;
+  box-shadow: 5px 5px 5px 5px #aaa;
+  border-radius: 5px;
+  clear: both;
+  position: relative;
+  top: 20px;
+  text-align: left;
+  padding: 5px 10px;
+}
+
+#scheduleDetail button {
+  width: 100%;
+  text-align: left;
+  background-color: inherit;
+  border: 0px;
+}
+
+#scheduleDetail li:hover {
+  background-color: #eee;
+}
